@@ -1,0 +1,6 @@
+import pyspark
+from pyspark import SparkContext,SparkConf
+from pyspark.sql import SparkSession
+c=pyspark.SparkConf().setAppName("test_app").setMaster("local")
+sc=pyspark.SparkContext(conf=c)
+spark=SparkSession(sc)
